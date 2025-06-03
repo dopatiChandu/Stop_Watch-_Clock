@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Clock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch & Clock</h1>
+        <div class="display">
+            <div class="clock">
+                <h2>Current Time (UTC)</h2>
+                <div id="clock">00:00:00</div>
+            </div>
+            <div class="stopwatch">
+                <h2>Stopwatch</h2>
+                <div id="stopwatch">00:00:00</div>
+                <div class="controls">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
